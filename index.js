@@ -1,9 +1,11 @@
 function isPalindrome(word) {
+  
+  const arrayValues = word.split('');
+  const reversedArrayValues = arrayValues.reverse();
+  const reverseWord = reversedArrayValues.join('');
+  return word;
 
-  return word.split('').reverse().join('');
-}
   function isPalindrome(word) {
-    //reverse the input string
     const reverseWord = reverseString(word);
     if(word == reverseWord) {
       return true;
@@ -12,7 +14,7 @@ function isPalindrome(word) {
     }
   }
  
-
+}
 
 /* 
   Add your pseudocode here
@@ -20,11 +22,6 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
-
-  if the reversed string is the same as the input
-  return true
-  else 
-    return false
 */
 
 // You can run `node index.js` to view these console logs

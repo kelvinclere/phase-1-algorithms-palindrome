@@ -1,5 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  
+  const arrayValues = word.split('');
+  const reversedArrayValues = arrayValues.reverse();
+  const reverseWord = reversedArrayValues.join('');
+  return word;
+
+  function isPalindrome(word) {
+    const reverseWord = reverseString(word);
+    if(word == reverseWord) {
+      return true;
+    }else {
+      return false;
+    }
+  }
+ 
 }
 
 /* 
